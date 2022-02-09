@@ -1,2 +1,2 @@
 # React-Devkit-Dashboard
-React, Sass
+React, Sass, react-icons
