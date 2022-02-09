@@ -1,0 +1,11 @@
+/* 4- Footer */
+.footer {
+    margin: 0 auto;
+    text-align: center;
+    background-color: $darkblue;
+    width: 100%;
+    padding: 1em;
+    & a {
+        color: $white;
+    }
+}

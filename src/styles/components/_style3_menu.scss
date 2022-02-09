@@ -1,0 +1,20 @@
+/* 3- Menu */
+.menu {
+    border-bottom: 2px solid $bordergrey;
+    color: $lightblack;
+    line-height: 3.5;
+    &__list {
+        display: flex;
+        &__item {
+          list-style: none;
+          margin-left: 2.5em;
+          font-size: 1rem;
+          font-weight: 700;
+          &--active a {
+            text-decoration: underline;
+            text-decoration-color: $blue;
+            text-decoration-thickness: 3px;
+          }
+        }   
+      }
+    }

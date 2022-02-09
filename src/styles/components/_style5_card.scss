@@ -1,0 +1,37 @@
+/* 5 Card */
+.card {
+    &__head {
+        display: flex;
+        margin-top: -1em;
+        &__text {
+            line-height: 3;
+            & p {
+                line-height: 1.5;
+            }
+        }
+        &__text h2 {
+            font-size: 1.5rem;
+            color: $black;
+        }
+        &__img {
+            padding: 1.5em;
+        }
+    }
+    &__links {
+        border-top: 1px solid $bordergrey;
+        margin: 0 -1em;
+        &__list {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            margin-top: 1em;
+        }
+    }
+    & a {
+        color: $blackblue;
+        font-size: .75rem;
+        &:hover {
+            color: $blue;
+        }
+    }
+  }

@@ -1,0 +1,13 @@
+[
+    {
+        "notifications_title": "Notifications",
+        "notifications_mutted": "Manage the notifications emailing",
+        "notifications_subtitle_1": "Notifications",
+        "notifications_subtitle_2": "Messages",
+        "notifications_item_1": "Email",
+        "notifications_item_2": "Push notifications",
+        "notifications_item_3": "Text Messages",
+        "notifications_item_4": "Phone Calls",
+        "notifications_btn": "SAVE"
+    }
+]

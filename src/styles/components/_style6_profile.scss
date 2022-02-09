@@ -1,0 +1,40 @@
+/* 6- Profile */
+.profile {
+    &__header {
+        display: flex;
+        border-bottom: 1px solid $bordergrey;
+        padding-bottom: 1.5em;
+        & p {
+            color: $lightgrey;
+            margin-left: .5em;
+        }
+    }
+    &__content {
+        &__form {
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            align-items: flex-start;
+            padding: 2em 0;
+            border-bottom: 1px solid $bordergrey;
+            &__left span, &__right span {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+            }
+        }
+    }
+    &__footer {
+        margin: 1em 0;
+        &__button {
+            @include btn-blue();
+            padding: 12px 16px;
+            border-radius: 4px;
+            &:hover {
+                @include btn-white();
+                font-weight: 700;
+            }
+        }
+    }
+   
+  }

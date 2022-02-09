@@ -1,0 +1,57 @@
+/* 7- Notifications */
+.notifications {
+    border-radius: 4px;
+    &__header {
+        display: flex;
+        border-bottom: 1px solid $bordergrey;
+        padding-bottom: 1.5em;
+        & p {
+            color: $lightgrey;
+            margin-left: .5em;
+        }
+    }
+    &__content__form input, .notifications__content__form label {
+        color: $grey;
+    }
+    & .assistive {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        small {
+            display: flex;
+            flex-direction: row;
+            line-height: 1;
+        }
+    }
+    &__content {
+        border-bottom: 1px solid $bordergrey;
+        &__form {
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            &__left, &__right {
+                display: flex;
+                flex-direction: column;
+                padding-right: 20%;
+                label, input {
+                    width: auto;
+                    height: auto;
+                    padding: .5em;
+                    margin-bottom: 0;
+                    border: none;
+                    line-height: 3;
+                  }
+            }
+        }
+    }
+    &__footer__button {
+        margin-top: 24px;
+        @include btn-white();
+        padding: 12px 16px;
+        border-radius: 4px;
+        &:hover {
+            @include btn-blue();
+            font-weight: bold;
+        }
+    }
+  }

@@ -1,0 +1,190 @@
+/* MEDIA QUERIES */
+@media (max-width: 600px) {
+    .App, .menu .menu__list, .main, .card .card__head {
+      display: flex;
+      flex-direction: column;
+    }
+    .header .header__main__cta {
+      display: none;
+    }
+    .navbar__content ul li {
+      text-align: center;
+      border: 2px solid $blue;
+      margin: .25em;
+      border-radius: 20px;
+    }
+    .navbar__footer {
+      text-align: right;
+    }
+    main .card {
+      margin: 0 auto;
+      margin-top: 2em;
+    }
+    .card .card__links__list {
+      @include flex-column-start();
+      align-items: center;
+    }
+    .card .card__links__list__item {
+      margin-bottom: 1em;
+      border-bottom: 1px solid $bordergrey;
+    }
+    .profile .profile__content .profile__content__form input {
+      width: 120%;
+      padding: 1em;
+    }
+    .profile, .notifications {
+      margin: 2em auto;
+    }
+    .profile p, .notifications p {
+      display: none;
+    }
+    .profile .profile__content .profile__content__form {
+      @include flex-column-start();
+    }
+    .profile__content__form small  {
+      display: none;
+    }
+   .profile__footer__button, .notifications .notifications__footer__button {
+      width: 100%;
+    }
+    .notifications .notifications__content .notifications__content__form{
+      @include flex-column-start();
+    }
+  }
+  
+  @media (min-width: 601px) and (max-width: 910px) {
+   .header__main__brand__name {
+      text-align: center;
+    }
+    .header .header__main__cta {
+      text-align: center;
+      display: flex;
+      flex-direction: column-reverse;
+      background-color: transparent;
+    }
+    .header .header__main__cta p {
+      margin-bottom: .25em;
+    }
+    .main {
+      flex-direction: column;
+    }
+    main.card, .profile, .notifications {
+      max-width: 100%;
+      margin: 1em .5em;
+    }
+    .card .card__head {
+      justify-content: center;
+    }
+    .profile form {
+      justify-content: space-evenly;
+    }
+    .profile .profile__content .profile__content__form input {
+      width: 95%;
+      padding: 1em;
+    }
+    .profile__content__form small {
+      display: none;
+    }
+    .profile__footer__button, .notifications .notifications__footer__button {
+      width: 50%;
+    }
+  }
+  @media (min-width: 911px) and (max-width: 1200px) {
+    main .card {
+      max-height: 40%;
+    }
+    .card .card__head {
+      flex-direction: column;
+    }
+    .card .card__links__list {
+      @include flex-jusCent-aliCent();
+      flex-direction: column;
+    }
+    .card .card__links__list__item {
+      margin-bottom: 1em;
+      border-bottom: 1px solid $bordergrey;
+    }
+    .profile input {
+      max-width: 90%;
+      padding: 1em;
+    }
+    .profile .profile__footer__button, .notifications .notifications__footer__button {
+      width: 50%;
+    }
+    .footer {
+      @include flex-jusCent-aliCent();
+    }
+  }
+  @media (min-width: 1201px) and (max-width: 1599px) {
+    .profile, .notifications {
+      width: 100%;
+    }
+    .profile .profile__content__form {
+      justify-content: space-between;
+    }
+    .profile input {
+      max-width: 328px;
+      max-height: 56px;
+    }
+    .footer {
+      visibility: hidden;
+    }
+   
+  }
+  @media (max-width: 1599px) {
+    .notifications .assistive small {
+      display: none;
+    }
+    // .notifications .notifications__content .notifications__content__form .notifications__content__form__left .assistive .assistive--div {
+    //   align-items: flex-start;
+    // }
+    
+  }
+  @media (min-width: 1600px) {
+    .profile, .notifications {
+      width: 115%;
+      max-height: 454px;
+    }
+    .profile .profile__content__form__right {
+      margin-left: 2em;
+    }
+    main .card {
+      width: 80%;
+      max-height: 27%;
+    }
+    .card .card__head .card__head__text  h2{
+      font-size: 1.1rem;
+      margin-top: 1em;
+    }
+    .card .card__head .card__head__text  p{
+      font-size: .75rem;
+    }
+    .card .card__head .card__head__text {
+      line-height: 3;
+    }
+    .profile input {
+      width: 328px;
+      height: 56px;
+    }
+    .notifications .notifications__footer__button {
+      width: 15%;
+    }
+    .footer {
+      visibility: hidden;
+    }
+  }
+  @media (min-width: 2560px) {
+    .App {
+      margin-top: 2em;
+    }
+  }
+  @media (min-width: 2800px) {
+    .App {
+      margin-top: 4em;
+    }
+  }
+  @media (min-width: 3600px) {
+    .App {
+      margin-top: 16em;
+    }
+  }

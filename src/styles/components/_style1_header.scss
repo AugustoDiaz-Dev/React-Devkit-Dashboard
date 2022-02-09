@@ -1,0 +1,46 @@
+/* 1- Header */
+.header {
+    padding: 1.5em;
+    background-color: $darkblue;
+    color: $white;
+    @include flex-justBetw-aliCent();
+    &__main {
+      display: flex;
+      flex-direction: row;
+      &__brand {
+        @include flex-justBetw-aliCent();
+        & a {
+          margin-left: 1em;
+        }
+      }
+      &__cta {
+        @include flex-jusCent-aliCent();
+        background-color: $darkerblue;
+        border-radius: 4px;
+        padding: 0 8px;
+        margin-left: 3em;
+        & button {
+          @include btn-green();
+          padding: 2px 4px;
+          border-radius: 4px;
+          font-size: .625em;
+          &:hover {
+            @include btn-white-green();
+          }
+        }
+        & p {
+          color: $white;
+          margin-left: .75em;
+        }
+      }
+    }
+    &__icons {
+      ul li {
+        min-width: 1.5em;
+      }
+        font-size: 24px;
+      &__list {
+        display: flex;
+      }
+    }
+  }

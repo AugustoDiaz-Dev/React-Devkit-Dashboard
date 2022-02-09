@@ -1,0 +1,24 @@
+/* 2- Nav */
+.navbar {
+    box-shadow: 4px 4px 4px -4px $grey;
+    padding: 1.5em;
+    line-height: 2;
+    &__header {
+      text-align: center;
+    }
+    &__content {
+      line-height: 3;
+      & ul li a:hover {
+        color: $blue;
+      }
+    }
+    &__footer {
+      & ul li a:hover {
+        color: $blue;
+      }
+    }
+    & a {
+      color: $grey;
+    }
+  }
+

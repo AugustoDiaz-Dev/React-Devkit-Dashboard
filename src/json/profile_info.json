@@ -1,0 +1,13 @@
+[
+    {
+        "profile_info_title": "Basic Profile",
+        "profile_info_mutted": "The information can be edited from your profile page",
+        "profile_info_name": "First Name",
+        "profile_info_lastName": "Last Name",
+        "profile_info_email": "adrian_shp@yahoo.com",
+        "profile_info_phone": "0752549328",
+        "profile_info_country": "Romania",
+        "profile_info_city": "Ramnicu Valcea",
+        "profile_info_btn": "SAVE SETTINGS"
+    }
+]
